@@ -18,11 +18,11 @@ body {
   margin-bottom: 1rem;
   text-align: right;
   font-size: 1.1rem;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
-/* .display::placeholder {
-  font-size: 1.7rem;
-} */
+.display:focus {
+  outline: none;
+}
 
 .btncontainer {
   display: grid;
@@ -99,11 +99,6 @@ body {
   font-size: 1.6rem;
 }
 
-/* .btn-operators {
-  background: orange;
-} */
-
 .btn-action {
   background: green;
-  /* color: white; */
 }
