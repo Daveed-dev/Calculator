@@ -1,4 +1,4 @@
-import { display, state } from './var.js';
+import { display } from './var.js';
 
 export const handleNum = function (num, lastvalue) {
   if (num === '.') {
@@ -38,9 +38,4 @@ export const handleEqual = function (action, lastvalue) {
   const result = parseFloat(eval(display.value).toFixed(5));
 
   display.value = `${result}`;
-  state.isResult = true;
-};
-
-export const handleDelete = function () {
-  display.value = display.value.trim().slice(0, -1).trimEnd();
 };
